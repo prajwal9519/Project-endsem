@@ -75,4 +75,4 @@ The goal of this project is to build a dynamic web application using a public AP
 
 ## 👨‍💻 Author
 
-Your Name
+Prajwal
