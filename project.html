@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- 🔍 Navbar -->
+  <nav class="bg-gray-800 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-yellow-400">🎬 Movie Explorer</h1>
+    <input 
+      id="searchInput"
+      type="text" 
+      placeholder="Search movies..." 
+      class="px-4 py-2 rounded bg-gray-700 focus:outline-none"
+    />
+  </nav>
+
+  <!-- 🎥 Movies Grid -->
+  <div id="moviesContainer" class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Example Card -->
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src="https://via.placeholder.com/300x400" class="w-full h-80 object-cover" />
+      <div class="p-4">
+        <h2 class="text-lg font-bold">Movie Title</h2>
+        <p class="text-gray-400">Year: 2023</p>
+        <p class="text-sm mt-2">Type: Movie</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ⚡ Script -->
+  <script>
+    const container = document.getElementById("moviesContainer");
+
+    function displayMovies(movies) {
+      container.innerHTML = "";
+
+      movies.forEach(movie => {
+        const card = `
+          <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+            <img src="${movie.Poster}" class="w-full h-80 object-cover" />
+            <div class="p-4">
+              <h2 class="text-lg font-bold">${movie.Title}</h2>
+              <p class="text-gray-400">Year: ${movie.Year}</p>
+              <p class="text-sm mt-2">Type: ${movie.Type}</p>
+            </div>
+          </div>
+        `;
+        container.innerHTML += card;
+      });
+    }
+
+    // 🔍 Search API (OMDb)
+    document.getElementById("searchInput").addEventListener("keypress", async (e) => {
+  if (e.key === "Enter") {
+    const query = e.target.value;
+
+    const movies = await fetchMovies(query); // 👈 API call here
+
+    displayMovies(movies); // 👈 render here
+  }
+});
+  </script>
+
+</body>
+</html>
