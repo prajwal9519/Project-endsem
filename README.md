@@ -14,16 +14,14 @@ The goal of this project is to build a dynamic web application using a public AP
 
 ## 🔌 API Used
 
-* OMDb API (Open Movie Database)
-* Website: http://www.omdbapi.com/
+* TV API
+* Website: https://www.tvmaze.com/api
 
 ---
 
 ## ✨ Features
 
 * 🔍 Search movies by title
-* 🎯 Filter results by year and type
-* 📊 Sort movies by title or release year
 * 📄 View detailed movie information
 
 ---
