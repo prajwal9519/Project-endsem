@@ -30,7 +30,7 @@ The goal of this project is to build a dynamic web application using a public AP
 
 ## 🌐 Live Demo
 
-https://cool-stardust-6a0bbe.netlify.app/
+https://extraordinary-donut-4bd50d.netlify.app/
 
 ---
 
