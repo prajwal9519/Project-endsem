@@ -1,5 +1,7 @@
 # 🎬 Movie Explorer Web App
 
+## 
+
 ## 📌 Project Description
 
 Movie Explorer is a web application that allows users to search for movies and explore detailed information such as ratings, release year, genre, and plot. The app provides filtering and sorting features to enhance user experience.
@@ -26,6 +28,12 @@ The goal of this project is to build a dynamic web application using a public AP
 
 ---
 
+## 🌐 Live Demo
+
+https://cool-stardust-6a0bbe.netlify.app/
+
+---
+
 ## 🛠️ Technologies Used
 
 * HTML
@@ -39,38 +47,3 @@ The goal of this project is to build a dynamic web application using a public AP
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/your-username/movie-explorer-app.git
-   ```
-
-2. Navigate to the project folder:
-
-   ```
-   cd movie-explorer-app
-   ```
-
-3. Open `index.html` in your browser
-   OR run with Live Server (VS Code recommended)
-
----
-
-## 🔑 API Key Setup
-
-1. Go to http://www.omdbapi.com/apikey.aspx
-2. Get your free API key
-3. Replace `YOUR_API_KEY` in the code with your actual key
-
----
-
-## 📌 Future Improvements
-
-* Add pagination
-* Add user authentication
-* Improve UI/UX design
-* Deploy the app online
-
----
-
-## 👨‍💻 Author
-
-Prajwal
